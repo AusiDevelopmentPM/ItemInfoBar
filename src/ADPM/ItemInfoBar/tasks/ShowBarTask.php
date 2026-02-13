@@ -34,7 +34,8 @@ class ShowBarTask extends Task
                 $message = str_replace("{y}", $pos->getY(), $message);
                 $message = str_replace("{z}", $pos->getZ(), $message);
                 $message = str_replace("{item_name}", $item->getName(), $message);
-                $message = str_replace("{item_id}", $item->getType(), $message);
+                $message = str_replace("{item_id}", $item->getTypeId(), $message);
+                $message = str_replace("{line}", "\n", $message);
                 $player->sendActionBarMessage($message);
             }
         }
