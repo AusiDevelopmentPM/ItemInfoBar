@@ -1,0 +1,21 @@
+{
+  "name": "ausidevelopmentpm/iteminfobar",
+  "description": "description",
+  "version": "1.0.0",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "EyNoah1171",
+      "email": "eynoah1171@gmx.net",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "8.3",
+    "pocketmine/pocketmine-mp": "5.39.3"
+  },
+  "scripts": {
+    "buildphar": "php -dphar.readonly=0 build.php"
+  }
+}
