@@ -9,6 +9,7 @@
 namespace ADPM\ItemInfoBar;
 
 use pocketmine\plugin\PluginBase;
+use pocketmine\Server;
 use pocketmine\utils\Config;
 use pocketmine\utils\SingletonTrait;
 
@@ -20,6 +21,11 @@ class Loader extends PluginBase
     public function onEnable(): void
     {
         self::setInstance($this);
+
+        @mkdir($this->getDataFolder());
+        $this->saveDefaultConfig();
+
+        Server::getInstance()->getPluginManager()->registerEvents(new EventListener(), $this);
 
         $this->getLogger()->info("ItemInfoBar plugin activated");
     }
