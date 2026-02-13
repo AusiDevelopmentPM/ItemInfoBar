@@ -1,12 +1,11 @@
 # ItemInfoBar
 a Plugin which shows some Information over the **Hotbar**
 
-# FAQ
+# Placeholders
 
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
+
+| Placeholder |            Text            |
+|-------------|:--------------------------:|
+| {x} {y} {z} | The Coordination of Player |
+| left bar    |         right bar          |
+| left baz    |         right baz          |
